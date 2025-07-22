@@ -12,7 +12,7 @@ const BookCard = ({ libro }) => {
       />
       <Card.Body>
         <Card.Title>{libro.title}</Card.Title>
-        <Card.Text>{libro.price}</Card.Text>
+        <Card.Text>{libro.price} $</Card.Text>
         <Button variant="primary" className="fixedbottom">
           Compra
         </Button>
