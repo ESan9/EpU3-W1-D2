@@ -6,7 +6,7 @@ const BookList = () => (
   <Row className="justify-content-center">
     {libriHorror.map((libro) => (
       <Col
-        key={libro.id || libro.title}
+        key={libro.id}
         xs={12}
         sm={6}
         md={4}
