@@ -3,9 +3,9 @@ import Card from "react-bootstrap/Card";
 
 const BookCard = ({ libro }) => {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem", height: "auto" }}>
       <Card.Img
-        className="img-fluid"
+        className="h-75"
         variant="top"
         src={libro.img}
         alt={"l'immagine di" + "" + libro.title}
@@ -13,7 +13,9 @@ const BookCard = ({ libro }) => {
       <Card.Body>
         <Card.Title>{libro.title}</Card.Title>
         <Card.Text>{libro.price}</Card.Text>
-        <Button variant="primary">Compra</Button>
+        <Button variant="primary" className="fixedbottom">
+          Compra
+        </Button>
       </Card.Body>
     </Card>
   );

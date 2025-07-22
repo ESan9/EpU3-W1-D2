@@ -8,19 +8,17 @@ import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <>
-      <body className="d-flex flex-column vh-100">
-        <MyNav />
+    <div className="d-flex flex-column vh-100">
+      <MyNav />
 
-        <Welcome />
-        <Container className="py-4">
-          <h1>Libri Horror</h1>
-          <BookList />
-        </Container>
+      <Welcome />
+      <Container className="py-4 g-2">
+        <h1>Libri Horror</h1>
+        <BookList />
+      </Container>
 
-        <MyFooter />
-      </body>
-    </>
+      <MyFooter />
+    </div>
   );
 }
 
