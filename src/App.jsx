@@ -12,13 +12,11 @@ function App() {
       <body className="d-flex flex-column vh-100">
         <MyNav />
 
-        <main>
-          <Welcome />
-          <Container className="py-4">
-            <h1>Libri Horror</h1>
-            <BookList />
-          </Container>
-        </main>
+        <Welcome />
+        <Container className="py-4">
+          <h1>Libri Horror</h1>
+          <BookList />
+        </Container>
 
         <MyFooter />
       </body>
